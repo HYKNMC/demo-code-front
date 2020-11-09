@@ -1,0 +1,64 @@
+/* 背景色占满全屏 */
+
+html,
+body,
+#app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 位于页面上下左右居中 */
+
+.box {
+    /* 绝对定位，位置相对于页面边界进行定位 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* 图片圆形显示 */
+
+.img-container {
+    border-radius: 50%;
+}
+
+img {
+    border-radius: 50%;
+}
+
+
+/*图片大小根据容器大小自动确定*/
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*容器中的两个部分左右贴边对齐*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*元素在父元素的竖直方向上的中心*/
+
+.container {
+    /*父元素必须是弹性盒子*/
+    display: flex;
+    align-items: center;
+}
+
+
+/*卡片视图的阴影*/
+
+.el-card {
+    /*原生样式权重较高需要使用!important强化自定义样式的权重以覆盖原生样式*/
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
