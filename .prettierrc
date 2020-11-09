@@ -1,0 +1,6 @@
+{
+    "_semi": "格式化时不添加分号",
+    "semi": false,
+    "_singleQuote": "启用单引号",
+    "singleQuote": true
+}
